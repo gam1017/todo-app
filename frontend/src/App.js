@@ -1,5 +1,6 @@
 // GPT 사용
 
+import './App.css';
 import React, { useEffect, useState } from 'react';
 import TodoItem from './TodoItem';
 
@@ -40,7 +41,7 @@ function App() {
 
   return (
     <div style={{ padding: 20 }}>
-      <h1>📝 TODO List (React)</h1>
+      <h1>📝 TODO List</h1>
       <input
         type="text"
         value={task}
