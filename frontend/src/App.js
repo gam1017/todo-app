@@ -9,14 +9,14 @@ function App() {
   const [task, setTask] = useState('');
 
   const loadTodos = async () => {
-    const res = await fetch('http://localhost:5000/todos');
+    const res = await fetch('api/todos');
     const data = await res.json();
     setTodos(data);
   };
 
   const addTodo = async () => {
     if (task.trim() === '') return;
-    await fetch('http://localhost:5000/todos', {
+    await fetch('api/todos', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ task })
@@ -26,12 +26,12 @@ function App() {
   };
 
   const deleteTodo = async (id) => {
-    await fetch(`http://localhost:5000/todos/${id}`, { method: 'DELETE' });
+    await fetch(`api/todos/${id}`, { method: 'DELETE' });
     loadTodos();
   };
 
   const toggleDone = async (id) => {
-    await fetch(`http://localhost:5000/todos/${id}/toggle`, { method: 'PATCH' });
+    await fetch(`api/todos/${id}/toggle`, { method: 'PATCH' });
     loadTodos();
   };
 
@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div style={{ padding: 20 }}>
-      <h1>📝 TODO List</h1>
+      <h1>TODO List</h1>
       <input
         type="text"
         value={task}
