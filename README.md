@@ -3,24 +3,37 @@
 ## 디렉토리 구조
 
 todo-app/
-├── backend/                  
+
+├── backend/   
+
 │   ├── app.py
+
 │   ├── requirements.txt
+
 │   └── Dockerfile
+
 |
-├── frontend/                 
+
+├── frontend/           
+
 │   ├── index.html
+
 │   ├── style.css
+
 │   ├── script.js
+
 │   └── Dockerfile
+
 |
+
 ├── docker-compose.yml        
+
 └── README.md
 
 ## 실행 방법
 
 ## 실행 전 조건
-- Docker가 깔려 있어야 함!
+> Docker가 깔려 있어야 함!
 
 ### 1. 프로젝트 클론
 
