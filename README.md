@@ -17,7 +17,10 @@ todo-app/
 ├── docker-compose.yml        
 └── README.md
 
-## 🚀 실행 방법
+## 실행 방법
+
+## 실행 전 조건
+- Docker가 깔려 있어야 함!
 
 ### 1. 프로젝트 클론
 
@@ -28,7 +31,9 @@ cd todo-app
 docker-compose up --build
 
 ### 3. 웹 브라우저 접속
-http://localhost:3000
+http://localhost
+혹은
+http://localhost:80
 
 ### 4. 종료
 docker-compose down
