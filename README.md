@@ -11,7 +11,6 @@ todo-app/
 │   ├── requirements.txt
 
 │   └── Dockerfile
-
 |
 
 ├── frontend/           
@@ -23,12 +22,16 @@ todo-app/
 │   ├── script.js
 
 │   └── Dockerfile
+│
+├── nginx/
 
+│   ├── nginx.conf
 |
-
 ├── docker-compose.yml        
 
 └── README.md
+
+----
 
 ## 실행 방법
 
